@@ -1,0 +1,5 @@
+The provided code is a conceptual framework for the research paper's methodology. It is structured into two main Python files: main.py and preprocessing.py.
+
+main.py serves as the orchestration script. It handles data loading, splitting the dataset into training, validation, and test sets, and running the experiments. It's designed to perform multiple runs with different random seeds to calculate the mean and standard deviation of the results, as requested by the reviewers. It includes functions for training both machine learning models (like SVM and Random Forest) and transformer-based models (like Bangla BERT).
+
+preprocessing.py is a dedicated module for the custom preprocessing pipeline. It contains a PreprocessingPipeline class with placeholder functions for each of the six specialized techniques (e.g., word correction, dialect detection, etc.). This separation allows for clean, modular code where each preprocessing step can be developed and refined independently before being integrated into the main workflow.
